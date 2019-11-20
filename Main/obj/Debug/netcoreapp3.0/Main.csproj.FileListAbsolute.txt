@@ -1,0 +1,11 @@
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.exe
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.deps.json
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.runtimeconfig.json
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.runtimeconfig.dev.json
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.dll
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\bin\Debug\netcoreapp3.0\Main.pdb
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\obj\Debug\netcoreapp3.0\Main.csprojAssemblyReference.cache
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\obj\Debug\netcoreapp3.0\Main.AssemblyInfoInputs.cache
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\obj\Debug\netcoreapp3.0\Main.AssemblyInfo.cs
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\obj\Debug\netcoreapp3.0\Main.dll
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Main\obj\Debug\netcoreapp3.0\Main.pdb
