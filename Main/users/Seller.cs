@@ -9,12 +9,12 @@ namespace Main.users
         public int id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public void GetUserId()
+        public int GetUserId()
         {
             throw new NotImplementedException();
         }
 
-        public void GetUserName()
+        public string GetUserName()
         {
             throw new NotImplementedException();
         }

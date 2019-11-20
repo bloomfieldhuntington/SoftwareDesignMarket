@@ -7,6 +7,7 @@ namespace Main
         static void Main(string[] args)
         {
             Market Sothebys = new Market();
+            
 
             Sothebys.MarketLoop();
         }

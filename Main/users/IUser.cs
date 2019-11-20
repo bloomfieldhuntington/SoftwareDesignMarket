@@ -9,8 +9,8 @@ namespace Main.users
         int id { get; set; }
         string name { get; set; }
 
-        void GetUserId();
-        void GetUserName();
+        int GetUserId();
+        string GetUserName();
 
         void ToString();
     }

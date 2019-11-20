@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Main.interfaces;
 
 namespace Main
 {
     class Product
     {
-        int Id { get; set; }
-        string ProductName { get; set; }
-        int AskPrice { get; set; }
-        int BidPrice { get; set; }
-        int SellerId { get; set; }
+        // MARK:- PROPERTIES
+        int Id;
+        string ProductName;
+        int AskPrice;
+        int BidPrice;
+        int SellerId;
         // Bids
         List<Bid> Bids = new List<Bid>();
 
@@ -21,6 +23,18 @@ namespace Main
             this.AskPrice = price;
             this.SellerId = sellerId;
         }
+
+        // MARK:- GETTERS & SETTERS
+        public int GetProductId() { return this.Id; }
+        public string GetProductName() { return this.ProductName; }
+        public int GetAskPrice() { return this.AskPrice; }
+        public int GetBidPrice() { return this.BidPrice; }
+        public int GetSellerId() { return this.SellerId; }
+        public void SetProductId(int _value) { this.Id = _value; }
+        public void SetProductName(string _value) { this.ProductName = _value; }
+        public void SetAskPrice(int _value) { this.AskPrice = _value; }
+        public void SetBidPrice(int _value) { this.BidPrice = _value; }
+        public void SetSellerId(int _value) { this.SellerId = _value; }
 
         // MARK:- METHODS
 
@@ -34,12 +48,7 @@ namespace Main
             }
             else { }
         }
-        
-        // Set "BidPrice" with price of highest bid
-        public void SetBidPrice(int _value)
-        {
-            // Set "BidPrice" equal to _value
-        }
+       
 
         override
         public string ToString()

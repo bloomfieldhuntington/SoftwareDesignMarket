@@ -6,9 +6,9 @@ namespace Main
 {
     class Bid
     {
-        int BidId { get { return BidId; } set { this.BidId = value; } }
-        int BidPrice { get { return this.BidPrice; } set { this.BidPrice = value; } }
-        string BidOwner { get { return this.BidOwner; } set { this.BidOwner = value; } }
+        int BidId;
+        int BidPrice;
+        string BidOwner;
 
         public Bid(int bidId, int bidPrice, string bidOwner)
         {
@@ -16,7 +16,7 @@ namespace Main
             this.BidPrice = bidPrice;
             this.BidOwner = bidOwner;
         }
-        // MARK:- METHODS
+        // MARK:- GETTERS & SETTERS
 
         public int getBidId() { return this.BidId; }
         public int getBidPrice() { return this.BidPrice; }
@@ -26,7 +26,7 @@ namespace Main
         public void setBidPrice(int _value) { this.BidPrice = _value; }
         public void setBidOwner(string _value) { this.BidOwner = _value; }
         
-
+        override
         public string ToString()
         {
             string _nl = "\n";
