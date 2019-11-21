@@ -13,6 +13,6 @@ namespace Main.users
         int GetUserId();
         string GetUserName();
 
-        void ToString();
+        string ToString();
     }
 }

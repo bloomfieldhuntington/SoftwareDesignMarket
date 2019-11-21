@@ -45,9 +45,17 @@ namespace Main
             {
                 SetBidPrice(bid.getBidPrice());
                 Bids.Add(bid);
+                Console.WriteLine(bid.getBidPrice());
             }
-            else { }
+            else
+            {
+                SetBidPrice(bid.getBidPrice());
+                Bids.Add(bid);
+                Console.WriteLine(bid.getBidPrice());
+            }
         }
+
+
        
 
         override

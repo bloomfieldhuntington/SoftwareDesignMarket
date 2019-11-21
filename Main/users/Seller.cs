@@ -19,7 +19,8 @@ namespace Main.users
             throw new NotImplementedException();
         }
 
-        void IUser.ToString()
+        override
+        public string ToString()
         {
             throw new NotImplementedException();
         }

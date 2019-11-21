@@ -9,12 +9,14 @@ namespace Main.users
         // MARK:- PROPERTIES
         public int id { get; set; }
         public string name { get; set; }
+        public int BidLimit { get; set; }
         private int BidCount = 0;
 
-        public Buyer(int _id, string _name)
+        public Buyer(int _id, string _name, int _bidLimit)
         {
             this.id = _id;
             this.name = _name;
+            this.BidLimit = _bidLimit;
         }
 
         // MARK:- GETTERS & SETTERS
@@ -32,12 +34,31 @@ namespace Main.users
             {
                 // if no bid has been made, make Ask price your bid
                 _item.AddBid(CreateBid(_item.GetAskPrice() + 1));
+                Console.WriteLine("{0} added bid to {1}", name, _item.GetProductName());
             }
-            else
+            else if (!BidLimitReached(_item))
             {
                 // if bid exist, make highest bid + your new bid
                 _item.AddBid(CreateBid(_item.GetBidPrice() + 1));
+                Console.WriteLine("{0} added bid to {1}", name, _item.GetProductName());
             }
+        }
+
+        public bool BidLimitReached(Product _item)
+        {
+            // Check if GetBidPrice is > my limit
+            if (_item.GetBidPrice() > _item.GetAskPrice() * BidLimit)
+            {
+                Console.WriteLine("{0} Limit Reached: true", name);
+                Console.WriteLine(_item.GetBidPrice());
+                return true;
+            } else
+            {
+                Console.WriteLine("{0} Limit Reached: false", name);
+                return false;
+            }
+
+            // if true: Return "Beyond my limit
         }
 
         // Create Bid
@@ -47,9 +68,10 @@ namespace Main.users
             return new Bid(_bidId, bidPrice, this.name);
         }
 
-        void IUser.ToString()
+        override
+        public string ToString()
         {
-            throw new NotImplementedException();
+            return "name: " + name;
         }
     }
 }
