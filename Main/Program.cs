@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Main
 {
@@ -10,6 +11,10 @@ namespace Main
             
 
             Sothebys.MarketLoop();
+
+            
+
+            
         }
     }
 }

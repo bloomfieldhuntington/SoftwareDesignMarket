@@ -53,7 +53,8 @@ namespace Main
         override
         public string ToString()
         {
-            return this.ProductName;
+            string nl = "\n";
+            return nl + "id: " + this.Id + nl + "name: " + this.ProductName + nl + "ask: " + this.AskPrice + nl + "bid: " + this.BidPrice + nl + "seller id: " + this.SellerId + nl + "bids: " + this.Bids.Count + nl;
         }
     }
 }
