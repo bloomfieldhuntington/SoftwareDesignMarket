@@ -1,0 +1,3 @@
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Test\obj\Debug\netcoreapp3.0\Test.csprojAssemblyReference.cache
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Test\obj\Debug\netcoreapp3.0\Test.AssemblyInfoInputs.cache
+C:\Users\Benjamin\Documents\kristiania\software-design\Eksamen\SoftwareDesignExam2019\Test\obj\Debug\netcoreapp3.0\Test.AssemblyInfo.cs

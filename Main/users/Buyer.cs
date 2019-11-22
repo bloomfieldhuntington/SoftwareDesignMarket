@@ -47,7 +47,7 @@ namespace Main.users
                             // if no bid has been made, make Ask price your bid
                             _item.AddBid(CreateBid(_item.GetAskPrice() + (BidLimit + 33)));
                             _item.SetNameOfLastBidder(name);
-                            Console.WriteLine("{0} added bid of {2} to {1}", name, _item.GetProductName(), _item.GetBidPrice());
+                            Console.WriteLine(" {0} added bid of ${2} to {1}", name, _item.GetProductName(), _item.GetBidPrice());
 
                         }
                         else
@@ -55,7 +55,7 @@ namespace Main.users
                             // if bid exist, make highest bid + your new bid
                             _item.AddBid(CreateBid(_item.GetBidPrice() + 1));
                             _item.SetNameOfLastBidder(name);
-                            Console.WriteLine("{0} added bid of {2} to {1}", name, _item.GetProductName(), _item.GetBidPrice());
+                            Console.WriteLine(" {0} added bid of ${2} to {1}", name, _item.GetProductName(), _item.GetBidPrice());
 
                         }
                     }
@@ -71,9 +71,9 @@ namespace Main.users
             // Check if GetBidPrice is > my limit
             if (_item.GetBidPrice() > _item.GetAskPrice() * BidLimit)
             {
-                Console.WriteLine("{0} Limit Reached: true", name);
+                Console.WriteLine(" {0}'s limit is reached and is out!", name);
                 LimitReached = true;
-                Console.WriteLine("Curren bid price: " + _item.GetBidPrice());
+                //Console.WriteLine("Curren bid price: " + _item.GetBidPrice());
                 return true;
             } else
             {

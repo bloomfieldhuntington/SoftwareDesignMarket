@@ -5,7 +5,7 @@ using Main.interfaces;
 
 namespace Main
 {
-    class Product
+    public class Product
     {
         // MARK:- PROPERTIES
         //private Object productLock = new object();
@@ -43,7 +43,7 @@ namespace Main
         // MARK:- METHODS
 
         // Add "Bid" to "Bids"
-        public void AddBid(Bid bid)
+        internal void AddBid(Bid bid)
         {
             //Console.WriteLine("{0} is adding a bid to {1}", bid.getBidOwner(), ProductName);
             
@@ -94,7 +94,7 @@ namespace Main
         public string ToString()
         {
             string nl = "\n";
-            return nl + "id: " + this.Id + nl + "name: " + this.ProductName + nl + "ask: " + this.AskPrice + nl + "bid: " + this.BidPrice + nl + "seller id: " + this.SellerId + nl + "bids: " + this.Bids.Count + nl + "Final Bidder: " + this.NameOfLastBidder + nl;
+            return nl + " id: " + this.Id + nl + " ProductName: " + this.ProductName + nl + " Initial ask Price: $" + this.AskPrice + nl + " Last bid price: $" + this.BidPrice + nl + " Seller id: " + this.SellerId + nl + " Number of bids: " + this.Bids.Count + nl + " Final bidder and winner: " + this.NameOfLastBidder + nl;
         }
     }
 }

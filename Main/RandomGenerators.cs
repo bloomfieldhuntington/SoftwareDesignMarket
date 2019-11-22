@@ -46,7 +46,8 @@ namespace Main
         }
         public class RandomBuyerGen
         {
-            public string[] BuyerNameAlternatives = { "Kjell T.Ringen", "Grå Dig", "Lur Inge N.", "Tomas U. Tenh", "Lise Lisen" };
+            public string[] BuyerNameAlternatives = { "Kjell", "Pål", "Per", "Pelle", "Are", "Lise", "Kari", "Eva", "Espen", "Kåre", "Christian", "Katrine", "Oda", "Knut",
+"Jens", "Kristoffer", "Ben", "Jens", "Tore", "Åge", "Ole", "Olav", "Ali", "Mohammed", "John", "Petrine", "Linn", "Jesper" };
 
             public string RandomBuyerName()
             {
@@ -64,7 +65,7 @@ namespace Main
             public int RandomNum()
             {
                 Random random = new Random();
-                int RandomIndex = random.Next(1, 10);
+                int RandomIndex = random.Next(1, 3);
                 return RandomIndex;
             }
         }
