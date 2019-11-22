@@ -6,10 +6,14 @@ namespace Main.users
 {
     class Seller : IUser
     {
-        public int id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int id { get; set; }
+        public string name { get; set; }
 
-        
+        public Seller(int _id, string _name)
+        {
+            this.id = _id;
+            this.name = _name;
+        }
         public int GetUserId()
         {
             throw new NotImplementedException();

@@ -54,7 +54,7 @@ namespace Main
                 // TEST AREA
 
                 // Create 1 seller, add to list
-                Seller anon = new Seller();
+                Seller anon = new Seller(1, "anon");
 
                 // Create 1 product, add to List
                 Product product1 = new Product(1, RanProd.RandomWatchProductName(), RanProd.RandomWatchProductPrice(), 1);
@@ -123,6 +123,9 @@ namespace Main
                 {
                     Console.WriteLine(product.ToString());
                 }
+
+                Console.WriteLine(" Click any key to exit");
+                Console.ReadLine();
 
                 
 
